@@ -1,11 +1,12 @@
 import express, { Express, RequestHandler } from "express";
-import {handler, handler2} from "./handlers";
+import {handler, handler2, handler3} from "./handlers";
 
 class FooClass {
     app: Express;
 
     private func() {
         this.app.get("/matoki", handler);
+        app.get("/matoki", handler3);
     }
 }
 
